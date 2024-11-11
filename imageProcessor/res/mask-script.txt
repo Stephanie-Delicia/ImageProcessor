@@ -1,0 +1,25 @@
+ load examplePNG.png person
+ load exampleMask.png mask
+ blur person person-1
+ sharpen person-1 person-2
+ value-component person-2 person-3
+ intensity-component person-3 person-4
+ luma-component person-4 person-5
+ red-component person-5 person-6
+ green-component person-6 person-7
+ blue-component person-7 person-8
+ sepia-transform person-8 person-9
+ grayscale-transform person-9 person-10
+ 
+ mask person-10 mask person-11 blur
+ mask person-11 mask person-12 sharpen
+ mask person-12 mask person-13 value-component
+ mask person-13 mask person-14 intensity-component
+ mask person-14 mask person-15 luma-component
+ mask person-15 mask person-16 red-component
+ mask person-16 mask person-17 green-component
+ mask person-17 mask person-18 blue-component
+ mask person-18 mask person-19 sepia-transform
+ mask person-19 mask person-20 grayscale-transform
+ save person-20.png person-20
+  q

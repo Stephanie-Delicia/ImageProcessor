@@ -1,0 +1,8 @@
+ load examplePNG.png person
+ downscale person 150 186 person-1
+ downscale person 200 120 person-2
+ downscale person 30 38 person-3
+ save downscale-demo-1.png person-1
+ save downscale-demo-2.png person-2
+ save downscale-demo-3.png person-3
+  q
